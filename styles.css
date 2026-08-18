@@ -325,6 +325,18 @@ h1 i {
   aspect-ratio: 16 / 7;
 }
 
+.project-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 700ms cubic-bezier(0.2, 0.75, 0.3, 1);
+}
+
+.project-media:hover .project-poster,
+.project-media:focus-visible .project-poster {
+  transform: scale(1.035);
+}
+
 .project-green {
   background: #b993ff;
 }
